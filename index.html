@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        ELEMO WebForge 2026
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="./style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     NAVIGATION
+     ========================================================= -->
+
+<nav class="navbar">
+
+    <div class="nav-logo">
+
+        <span class="logo-main">
+            ELEMO
+        </span>
+
+        <span class="logo-sub">
+            A MIX N MATCH COMPANY
+        </span>
+
+    </div>
+
+
+    <div class="nav-links">
+
+        <a href="#hackathon">
+            Hackathon
+        </a>
+
+        <a href="#how-it-works">
+            How It Works
+        </a>
+
+        <a href="#submissions">
+            Submissions
+        </a>
+
+        <a
+            href="#register"
+            onclick="openModal(); return false;"
+        >
+            Register
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<section class="hero">
+<video class="hero-video" autoplay muted loop playsinline>
+    <source src="./images/hero-video.mp4" type="video/mp4">
+</video>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-grid"></div>
+
+
+    <div class="hero-content reveal">
+
+        <div class="hero-tag">
+            VIRTUAL HACKATHON · 2026
+        </div>
+
+
+        <h1>
+
+            BUILD.
+            <span>BREAK.</span>
+            INNOVATE.
+
+        </h1>
+
+
+        <p>
+
+            A new generation of hackathons by
+            <strong>ELEMO</strong>,
+            a Mix N Match Company.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#hackathon"
+                class="btn btn-primary"
+            >
+                EXPLORE HACKATHON
+            </a>
+
+
+            <button
+                class="btn btn-outline"
+                onclick="openModal()"
+            >
+                REGISTER NOW
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     HACKATHON
+     ========================================================= -->
+
+<section
+    id="hackathon"
+    class="section"
+>
+
+    <div class="container reveal">
+
+        <div class="section-label">
+            01 / THE EVENT
+        </div>
+
+
+        <div class="hackathon-header">
+
+            <div>
+
+                <h2>
+                    WEBFORGE
+                    <span>2026</span>
+                </h2>
+
+                <p class="section-description">
+
+                    A virtual building ground for
+                    creators, developers and problem
+                    solvers.
+
+                </p>
+
+            </div>
+
+
+            <div class="hackathon-meta">
+
+                <div>
+                    <span>MODE</span>
+                    <strong>ONLINE</strong>
+                </div>
+
+                <div>
+                    <span>REGISTRATION</span>
+                    <strong>01 SEPT - <br>20 SEPT</strong>
+                </div>
+
+                 <div>
+                    <span>SUBMISSION</span>
+                    <strong>21 SEPT - 10 OCT</strong>
+                </div>
+
+                <div>
+                    <span>PRIZE</span>
+                    <strong>1st: ₹10,000</strong>
+                    <strong>2nd: ₹5,000</strong>
+                    <strong>3rd: ₹2,000</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PROBLEM STATEMENT
+     ========================================================= -->
+
+<section class="problem-section">
+
+    <div class="container reveal">
+
+        <div class="section-label">
+            02 / THE CHALLENGE
+        </div>
+
+
+        <div class="problem-card">
+
+            <div class="problem-number">
+                01
+            </div>
+
+
+            <div class="problem-content">
+
+                <div class="problem-tag">
+                    PROBLEM STATEMENT
+                </div>
+
+
+                <h2>
+                    THE LAST ARCHIVE
+                </h2>
+
+
+                <p>
+
+                   <b> Problem Statement</b>
+
+
+
+Year 2179. Humanity is no longer the dominant species on Earth.
+
+Following a devastating extraterrestrial invasion, human civilization has collapsed. Cities have fallen, governments have disappeared, and most records of human civilization have been lost.
+
+A small group of survivors has managed to establish a secure digital archive containing fragments of information recovered from the old world.
+
+But there is a problem.
+
+<p><b>Future generations know almost nothing about the humans who came before them.</b>
+
+Your task is to build a digital portal into the life of an ordinary human from the 21st century a futuristic archive that allows someone from the future to understand what humanity was really like.
+
+The website should allow users to explore different aspects of human civilization, such as:</p>
+
+<b>Humans</b> : What did humans look like? How did they live?<br><br>
+<b>Food</b> : What did humans eat? How was food produced and prepared?<br><br>
+<b>Economy</b> : How did money, jobs, businesses and trade work?<br><br>
+<b>Daily Life</b> : Where did people live? What did an ordinary day look like?<br><br>
+<b>Geography</b> : What did Earth and its cities look like?<br><br>
+<b>Culture</b> : What music, art, entertainment and traditions existed?<br><br>
+<b>Society</b> : How were communities, governments and institutions organized?<br><br>
+<b>Technology</b> : What technologies did humans create and depend on?<br><br>
+<b>Relationships</b> : How did humans communicate, socialize and form relationships?<br><br>
+<b>History</b> : What major events shaped human civilization?<br><br>
+
+These are only starting points.
+
+You decide what parts of humanity deserve to be remembered.<br><br>
+
+<h3>What We Are Looking For</h3>
+<br>
+Participants must design and develop a functional, responsive and immersive web experience that presents human civilization as if it were being discovered by a future society.
+
+The website should feel like a futuristic digital archive, encyclopedia, museum, database, or portal into the lost human world.
+
+We encourage participants to experiment with:
+
+* Futuristic interfaces and visual systems<br>
+* Interactive timelines and maps<br>
+* Searchable archives and categories<br>
+* Data visualizations<br>
+* Interactive stories<br>
+* Images, videos and historical artifacts<br>
+* Animations and micro-interactions<br>
+* Creative navigation systems<br>
+* Any other web-based interaction that strengthens the experience<br>
+
+The solution does not need to cover every aspect of human civilization. Instead, participants should choose a clear direction and execute it exceptionally well.
+<br><br>
+<h3>Evaluation Criteria</h3><br>
+
+<b>1. Creativity & Originality: 25%</b>
+How unique and imaginative is the concept?
+<br>
+<b>2. UI/UX & Visual Design: 20%</b>
+How immersive, intuitive and visually compelling is the experience?
+<br>
+<b>3. Functionality: 20%</b>
+How well does the website actually work?
+<br>
+<b>4. Technical Implementation: 20%</b>
+How effectively are web technologies used to bring the concept to life?
+<br>
+<b>5. Storytelling & Presentation: 15%</b>
+How effectively does the website communicate the story of lost humanity?
+<br><br>
+
+<h3>DEPLOY IT AND SUBMIT THE LINK OF YOUR DEPLOYED SITE ON THE LINK SENT ON THE EMAIL SHARED ON THE REGISTRATION CONFIRMATION MAIL.</h3>
+
+<br><br>
+
+<br>
+
+<h3>The Challenge</h3>
+
+Don't build a website about humanity.
+
+Build the website that a future civilization would use to discover what humanity was.
+
+
+                </p>
+
+
+                <p>
+
+                    Build a web experience that
+                    reimagines how people discover,
+                    preserve and interact with valuable
+                    digital information.
+
+                </p>
+
+
+                <div class="problem-details">
+
+                    <div>
+
+                        <span>
+                            OBJECTIVE
+                        </span>
+
+                        <strong>
+                            BUILD SOMETHING USEFUL
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            PLATFORM
+                        </span>
+
+                        <strong>
+                            WEB
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            TEAM SIZE
+                        </span>
+
+                        <strong>
+                            3 MEMBERS
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     HOW IT WORKS
+     ========================================================= -->
+
+<section
+    id="how-it-works"
+    class="section"
+>
+
+    <div class="container reveal">
+
+        <div class="section-label">
+            03 / PROCESS
+        </div>
+
+
+        <h2 class="section-title">
+            HOW IT WORKS
+        </h2>
+
+
+        <div class="process-grid">
+
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    01
+                </div>
+
+                <h3>
+                    REGISTER
+                </h3>
+
+                <p>
+                    Register your team and
+                    secure your spot.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    02
+                </div>
+
+                <h3>
+                    BUILD
+                </h3>
+
+                <p>
+                    Build your solution during
+                    the 48-hour hackathon.
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    03
+                </div>
+
+                <h3>
+                    SUBMIT
+                </h3>
+
+                <p>
+                    Submit your finished project
+                    before the deadline.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SUBMISSIONS
+     ========================================================= -->
+
+<section
+    id="submissions"
+    class="submission-section"
+>
+
+    <div class="container reveal">
+
+        <div class="section-label">
+            04 / SUBMISSIONS
+        </div>
+
+
+        <div class="submission-box">
+
+            <h2>
+                READY TO SHIP?
+            </h2>
+
+
+            <p>
+
+                Submissions will be collected throught link sent on confirmation email.
+
+            </p>
+
+
+            
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FINAL CTA
+     ========================================================= -->
+
+<section
+    id="register"
+    class="final-cta"
+>
+
+    <div class="container reveal">
+
+        <div class="cta-content">
+
+            <div class="section-label">
+                05 / JOIN THE BUILD
+            </div>
+
+
+            <h2>
+                BUILD SOMETHING
+                <span>WORTH REMEMBERING.</span>
+            </h2>
+
+
+            <button
+                class="btn btn-primary"
+                onclick="openModal()"
+            >
+                REGISTER YOUR TEAM
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer>
+
+    <div class="footer-inner">
+
+        <div class="footer-brand">
+
+            <strong>
+                ELEMO
+            </strong>
+
+            <span>
+                A MIX N MATCH COMPANY
+            </span>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            © 2026 ELEMO.
+            ALL RIGHTS RESERVED.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     REGISTRATION MODAL
+     ========================================================= -->
+
+<div
+    id="registrationModal"
+    class="modal"
+>
+
+    <div class="modal-content">
+
+
+        <button
+            class="modal-close"
+            onclick="closeModal()"
+        >
+            ×
+        </button>
+
+
+        <div class="modal-header">
+
+            <div class="section-label">
+                REGISTRATION
+            </div>
+
+
+            <h2>
+                JOIN WEBFORGE
+            </h2>
+
+
+            <p>
+                Register your 3-member team.
+            </p>
+
+        </div>
+
+
+
+        <form
+            id="registrationForm"
+            enctype="multipart/form-data"
+        >
+
+
+            <!-- LEADER -->
+
+            <div class="form-group">
+
+                <label for="leaderName">
+                    LEADER NAME
+                </label>
+
+                <input
+                    type="text"
+                    id="leaderName"
+                    name="leader_name"
+                    placeholder="Enter leader's full name"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- TEAMMATE 1 -->
+
+            <div class="form-group">
+
+                <label for="teammate1Name">
+                    TEAMMATE 1 NAME
+                </label>
+
+                <input
+                    type="text"
+                    id="teammate1Name"
+                    name="teammate_1_name"
+                    placeholder="Enter teammate's full name"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- TEAMMATE 2 -->
+
+            <div class="form-group">
+
+                <label for="teammate2Name">
+                    TEAMMATE 2 NAME
+                </label>
+
+                <input
+                    type="text"
+                    id="teammate2Name"
+                    name="teammate_2_name"
+                    placeholder="Enter teammate's full name"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- INSTITUTION -->
+
+            <div class="form-group">
+
+                <label for="institution">
+                    UNIVERSITY / SCHOOL
+                </label>
+
+                <input
+                    type="text"
+                    id="institution"
+                    name="institution"
+                    placeholder="Enter your university or school"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- YEAR -->
+
+            <div class="form-group">
+
+                <label for="year">
+                    COLLEGE / SCHOOL YEAR
+                </label>
+
+                <input
+                    type="text"
+                    id="year"
+                    name="year"
+                    placeholder="e.g. 1st Year"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- BRANCH -->
+
+            <div class="form-group">
+
+                <label for="branch">
+                    BRANCH
+                </label>
+
+                <input
+                    type="text"
+                    id="branch"
+                    name="branch"
+                    placeholder="e.g. Computer Science"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- COURSE -->
+
+            <div class="form-group">
+
+                <label for="course">
+                    COURSE
+                </label>
+
+                <input
+                    type="text"
+                    id="course"
+                    name="course"
+                    placeholder="e.g. B.Tech"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- PAYMENT -->
+
+            <div class="payment-section">
+
+                <div class="payment-title">
+                    PAYMENT
+                </div>
+
+
+                <p>
+                    Scan the QR code below to
+                    complete your registration payment.
+                </p>
+
+
+                <img
+                    src="./payment-qr1.jpeg"
+                    alt="Payment QR Code"
+                    class="payment-qr"
+                >
+
+            </div>
+
+
+
+            <!-- SCREENSHOT -->
+
+            <div class="form-group">
+
+                <label for="paymentScreenshot">
+                    SCREENSHOT OF PAYMENT
+                </label>
+
+
+                <input
+                    type="file"
+                    id="paymentScreenshot"
+                    name="paymentScreenshot"
+                    accept="image/png,image/jpeg,image/webp"
+                    required
+                >
+
+
+                <div
+                    id="fileName"
+                    class="file-name"
+                >
+                    PNG / JPG / WEBP
+                </div>
+
+            </div>
+
+
+
+            <button
+                type="submit"
+                class="btn btn-primary form-submit"
+            >
+                SUBMIT REGISTRATION
+            </button>
+
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     SCRIPTS
+     ========================================================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="./script.js"></script>
+
+
+</body>
+
+</html>

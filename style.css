@@ -1,0 +1,947 @@
+/* =========================================================
+   ELEMO HACKATHON
+   MAIN STYLESHEET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+
+button,
+input {
+    font-family: inherit;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    z-index: 1000;
+}
+
+
+.nav-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+
+.logo-main {
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+
+.logo-sub {
+    font-size: 8px;
+    letter-spacing: 2px;
+    opacity: 0.55;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+
+.nav-links a {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    transition: 0.3s ease;
+}
+
+
+.nav-links a:hover {
+    opacity: 1;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background-image: url("images/hero.jpeg");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, -1)
+        );
+
+    z-index: 1;
+}
+
+
+.hero-grid {
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.025) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.025) 1px,
+            transparent 1px
+        );
+
+    background-size: 60px 60px;
+
+    z-index: 2;
+}
+
+
+.hero-content {
+    position: relative;
+
+    max-width: 1000px;
+
+    padding: 140px 30px 80px;
+
+    z-index: 3;
+}
+
+
+.hero-tag {
+    font-size: 11px;
+    letter-spacing: 4px;
+    opacity: 0.6;
+    margin-bottom: 25px;
+}
+
+
+.hero h1 {
+    font-size: clamp(55px, 9vw, 125px);
+    line-height: 0.9;
+    font-weight: 900;
+    letter-spacing: -5px;
+}
+
+
+.hero h1 span {
+    display: block;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff9e;
+}
+
+
+.hero-content p {
+    max-width: 600px;
+
+    margin: 35px auto;
+
+    line-height: 1.7;
+
+    color: rgba(255, 255, 255, 0.65);
+}
+
+
+.hero-content strong {
+    color: #fff;
+}
+
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+
+    padding: 0 28px;
+
+    border: 1px solid #fff;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.btn-primary {
+    background: #fff;
+    color: #000;
+}
+
+
+.btn-primary:hover {
+    background: transparent;
+    color: #fff;
+}
+
+
+.btn-outline {
+    background: transparent;
+    color: #fff;
+}
+
+
+.btn-outline:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+.section {
+    padding: 130px 6%;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+
+.section-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    opacity: 0.45;
+    margin-bottom: 30px;
+}
+
+
+.section-title {
+    font-size: clamp(40px, 6vw, 75px);
+    letter-spacing: -3px;
+}
+
+
+/* =========================================================
+   HACKATHON
+   ========================================================= */
+
+.hackathon-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: flex-end;
+}
+
+
+.hackathon-header h2 {
+    font-size: clamp(55px, 8vw, 110px);
+    line-height: 0.9;
+    letter-spacing: -5px;
+}
+
+
+.hackathon-header h2 span {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+
+.section-description {
+    margin-top: 30px;
+    max-width: 500px;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.7;
+}
+
+
+.hackathon-meta {
+    display: flex;
+    gap: 40px;
+}
+
+
+.hackathon-meta div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.hackathon-meta span,
+.problem-details span {
+    font-size: 9px;
+    letter-spacing: 2px;
+    opacity: 0.4;
+}
+
+
+.hackathon-meta strong,
+.problem-details strong {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   PROBLEM
+   ========================================================= */
+
+.problem-section {
+    padding: 100px 6%;
+    background: #050505;
+}
+
+
+.problem-card {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    padding: 60px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.04),
+            transparent
+        );
+}
+
+
+.problem-number {
+    font-size: 12px;
+    opacity: 0.4;
+}
+
+
+.problem-tag {
+    font-size: 10px;
+    letter-spacing: 3px;
+    opacity: 0.45;
+    margin-bottom: 20px;
+}
+
+
+.problem-content h2 {
+    font-size: clamp(40px, 6vw, 80px);
+    letter-spacing: -3px;
+    margin-bottom: 30px;
+}
+
+
+.problem-content p {
+    max-width: 750px;
+    color: #999;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+.problem-details {
+    display: flex;
+    gap: 60px;
+    margin-top: 45px;
+    flex-wrap: wrap;
+}
+
+
+.problem-details div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+/* =========================================================
+   PROCESS
+   ========================================================= */
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+
+    margin-top: 60px;
+
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+.process-card {
+    min-height: 280px;
+
+    padding: 40px;
+
+    background: #000;
+}
+
+
+.process-number {
+    font-size: 11px;
+    opacity: 0.35;
+    margin-bottom: 60px;
+}
+
+
+.process-card h3 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+
+.process-card p {
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SUBMISSIONS
+   ========================================================= */
+
+.submission-section {
+    padding: 120px 6%;
+    background: #050505;
+}
+
+
+.submission-box {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 70px;
+}
+
+
+.submission-box h2 {
+    font-size: clamp(45px, 7vw, 90px);
+    letter-spacing: -4px;
+}
+
+
+.submission-box p {
+    margin: 25px 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+.submission-email {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 18px 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.final-cta {
+    padding: 150px 6%;
+}
+
+
+.cta-content {
+    max-width: 1000px;
+}
+
+
+.cta-content h2 {
+    font-size: clamp(50px, 8vw, 100px);
+    line-height: 0.95;
+    letter-spacing: -5px;
+    margin-bottom: 50px;
+}
+
+
+.cta-content h2 span {
+    display: block;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 35px 6%;
+}
+
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.footer-brand strong {
+    letter-spacing: 3px;
+}
+
+
+.footer-brand span,
+.footer-copy {
+    font-size: 9px;
+    letter-spacing: 2px;
+    opacity: 0.4;
+}
+
+
+/* =========================================================
+   MODAL
+   ========================================================= */
+
+.modal {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    background: rgba(0, 0, 0, 0.85);
+
+    backdrop-filter: blur(15px);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s ease;
+
+    z-index: 2000;
+}
+
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.modal-content {
+    position: relative;
+
+    width: 100%;
+    max-width: 650px;
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding: 50px;
+
+    background: #080808;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+.modal-close {
+    position: absolute;
+
+    top: 18px;
+    right: 22px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #757070;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    opacity: 0.6;
+}
+
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+
+.modal-header {
+    margin-bottom: 40px;
+}
+
+
+.modal-header h2 {
+    font-size: 45px;
+    letter-spacing: -2px;
+}
+
+
+.modal-header p {
+    margin-top: 12px;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    opacity: 0.5;
+}
+
+
+.form-group input {
+    width: 100%;
+
+    height: 52px;
+
+    padding: 0 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    outline: none;
+
+    background: #000;
+
+    color: #fff;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+
+.form-group input:focus {
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+
+.form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+
+/* =========================================================
+   PAYMENT
+   ========================================================= */
+
+.payment-section {
+    margin: 40px 0;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    background: #000;
+}
+
+
+.payment-title {
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+
+.payment-section p {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+
+.payment-qr {
+    display: block;
+
+    width: 220px;
+    height: 220px;
+
+    object-fit: contain;
+
+    margin: 25px auto 5px;
+
+    background: #fff;
+}
+
+
+/* =========================================================
+   FILE UPLOAD
+   ========================================================= */
+
+input[type="file"] {
+    padding: 14px !important;
+}
+
+
+.file-name {
+    margin-top: 8px;
+
+    font-size: 10px;
+
+    color: rgba(255, 255, 255, 0.4);
+}
+
+
+.form-submit {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+/* =========================================================
+   REVEAL ANIMATION
+   ========================================================= */
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+
+.reveal.visible {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        height: 70px;
+    }
+
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .hero-content {
+        padding-top: 120px;
+    }
+
+
+    .hero h1 {
+        letter-spacing: -3px;
+    }
+
+
+    .hackathon-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .hackathon-meta {
+        flex-wrap: wrap;
+    }
+
+
+    .problem-card {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 35px;
+    }
+
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .submission-box {
+        padding: 40px 30px;
+    }
+
+
+    .modal {
+        padding: 15px;
+    }
+
+
+    .modal-content {
+        padding: 35px 25px;
+    }
+
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+
+    .hackathon-header h2 {
+        font-size: 55px;
+    }
+
+
+    .problem-content h2 {
+        font-size: 42px;
+    }
+
+
+    .problem-details {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+}
