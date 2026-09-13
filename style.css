@@ -1,5 +1,4 @@
-/* =========================================================
-   ELEMO HACKATHON
+ELEMO HACKATHON
    MAIN STYLESHEET
    ========================================================= */
 
@@ -944,4 +943,16 @@ input[type="file"] {
         gap: 25px;
     }
 
+}
+
+/* Problem statement text color fix */
+.problem-content p,
+.problem-content p *,
+.problem-content {
+    color: #999 !important;
+}
+
+.problem-content h2,
+.problem-content h3 {
+    color: #fff !important;
 }
