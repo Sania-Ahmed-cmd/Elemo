@@ -328,9 +328,9 @@ if (registrationForm) {
                 )?.value.trim();
 
 
-            const institution =
+            const email =
                 document.getElementById(
-                    "institution"
+                    "email"
                 )?.value.trim();
 
 
@@ -360,7 +360,7 @@ if (registrationForm) {
                 !leaderName ||
                 !teammate1Name ||
                 !teammate2Name ||
-                !institution ||
+                !email ||
                 !year ||
                 !branch ||
                 !course
@@ -457,6 +457,7 @@ if (registrationForm) {
 
                 /* =================================================
                    SAVE REGISTRATION
+                   TABLE: institution
                    ================================================= */
 
                 const registrationResult =
@@ -469,14 +470,27 @@ if (registrationForm) {
                             leader_name:
                                 leaderName,
 
+                            /*
+                             * Your existing Supabase table has an
+                             * institution column, but the current
+                             * registration form asks for EMAIL
+                             * instead.
+                             *
+                             * Keep the existing column populated
+                             * with an empty value so the table
+                             * structure is not changed.
+                             */
+                            institution:
+                                email,
+
                             teammate_1_name:
                                 teammate1Name,
 
                             teammate_2_name:
                                 teammate2Name,
 
-                            institution:
-                                institution,
+                            email:
+                                email,
 
                             year:
                                 year,
