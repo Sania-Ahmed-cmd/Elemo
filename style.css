@@ -378,6 +378,22 @@ a {
 }
 
 
+.prize-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.prize-block strong {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-size: 20px;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+
 /* =========================================================
    PROBLEM
    ========================================================= */
@@ -390,7 +406,9 @@ a {
 
 .problem-card {
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: minmax(0, 1.6fr) minmax(200px, 260px);
+    align-items: center;
+    gap: 60px;
 
     border: 1px solid rgba(255, 255, 255, 0.12);
 
@@ -419,10 +437,21 @@ a {
 }
 
 
+.problem-content {
+    max-width: 760px;
+}
+
+
 .problem-content h2 {
-    font-size: clamp(40px, 6vw, 80px);
-    letter-spacing: -3px;
+    font-size: clamp(70px, 8vw, 180px);
+    line-height: 0.8;
+    letter-spacing: -7px;
     margin-bottom: 30px;
+}
+
+
+.problem-content h2 span {
+    display: block;
 }
 
 
@@ -436,9 +465,11 @@ a {
 
 .problem-details {
     display: flex;
-    gap: 60px;
-    margin-top: 45px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 0;
 }
 
 
